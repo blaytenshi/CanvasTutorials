@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<!-- 004 Rectangular Shape Example -->
+	<title>Canvas tutorial</title>
+	<script type="text/javascript">
+		function draw() {
+			var canvas = document.getElementById('canvas');
+			if (canvas.getContext) {
+				var ctx = canvas.getContext('2d');
+
+				ctx.fillRect(25, 25, 100, 100); // draw a rectangle at position x=25, y=25, width=100, height=100
+				ctx.clearRect(45, 45, 60, 60); // clear the area in a rectangular shape
+				ctx.strokeRect(50, 50, 50, 50); // draw rectangular outline
+			}
+		}
+
+	</script>
+</head>
+<body onload="draw();">
+	<canvas id="canvas" width="150" height="150"></canvas>
+</body>
+</html>
